@@ -1,0 +1,1 @@
+- [AI provider fallback](ai-provider-fallback.md) — live OpenAI calls require available account credits; keep the local analysis path usable when the provider is unavailable.
