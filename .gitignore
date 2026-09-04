@@ -1,111 +1,49 @@
-# =========================================================================
-# Operating System & IDE Artifacts
-# =========================================================================
-# macOS
-.DS_Store
-.AppleDouble
-.LSOverride
-._*
-.Spotlight-V100
-.Trashes
+# See https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
 
-# Windows
-Thumbs.db
-Thumbs.db:encryptable
-ehthumbs.db
-ehthumbs_vista.db
-*.stackdump
-[Dd]esktop.ini
-$RECYCLE.BIN/
+# compiled output
+dist
+tmp
+out-tsc
+*.tsbuildinfo
+.expo
+.expo-shared
 
-# Linux
-*~
-.directory
+# dependencies
+node_modules
 
-# IDEs & Editors
-.idea/
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
 *.sublime-workspace
-*.sublime-project
+
+# IDE - VSCode
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-*.suo
-*.ntvs*
-*.njsproj
-*.swp
-*.swo
 
-# =========================================================================
-# Environment Variables & Secrets
-# =========================================================================
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-*.local
-*.env.*
-!.env.example
-!.env.sample
-!.env.template
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
 
-# Private Keys & Certificates
-*.pem
-*.key
-*.cert
-*.crt
-*.pfx
-*.p12
-credentials.json
-token.json
-serviceAccountKey.json
+# System Files
+.DS_Store
+Thumbs.db
 
-# =========================================================================
-# Node.js, Dependencies & Build Artifacts
-# =========================================================================
-# Dependencies
-node_modules/
-jspm_packages/
-web_modules/
-.pnp
-.pnp.js
+.cursor/rules/nx-rules.mdc
+.github/instructions/nx.instructions.md
 
-# Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-lerna-debug.log*
-pnpm-debug.log*
-
-# Build Outputs
-dist/
-dist-ssr/
-build/
-out/
-.next/
-.nuxt/
-.vuepress/dist/
-.serverless/
-.fusebox/
-.dynamodb/
-.tern-port
-
-# Caches
+# Replit
 .cache/
-.parcel-cache/
-.turbo/
-.eslintcache
-.stylelintcache
-.rpt2_cache/
-.rts2_cache_cjs/
-.rts2_cache_es/
-.rts2_cache_umd/
-.tsbuildinfo
-
-# Testing & Coverage
-coverage/
-.nyc_output/
-cypress/videos/
-cypress/screenshots/
+.local/
