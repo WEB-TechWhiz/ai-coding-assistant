@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "AI Coding Orchestrator"
+description = "A deployable AI coding workspace that turns developer requirements into an implementation plan, stack guidance, frontend and backend code assistance, merge readiness checks, and a consolidated build brief."
+version = "1.0.0"
+id = "artifacts/ai-coding-orchestrator"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 19245
+
+[services.development]
+run = "pnpm --filter @workspace/ai-coding-orchestrator run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/ai-coding-orchestrator", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/ai-coding-orchestrator/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "19245"
+BASE_PATH = "/"
